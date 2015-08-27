@@ -325,25 +325,26 @@ of US departments, with departments assigned equally spaced values of $Q_d \in [
 
 I use data from the 104 American departments ranked in the top 25\% of
 US departments by REPEC. Data from lower-ranked departments is
-available, but noisy because, economists at low ranked departments
+available but noisy because economists at low ranked departments
 publish relatively rarely. I observe the location of an economist
 only when his work appears in a journal. To give some idea about what is
 excluded, the three lowest ranked included universities are Clark
 University, the Georgia Institute of Technology, and the University of
 New Mexico. I drop all economists who never worked at any of the 104 departments 
-in my dataset.  If an economist in my dataset spent some years at a
-department not included, I classify his department in those years as
-``other''. I estimate the model on data for the eight years beginning
+in my dataset.  If an economist in my sample works for some years at a
+department not included in the top 25\%, I drop those years for that economist. I estimate the model on data for the eight years beginning
 in 1987, the year after Jensen's paper was published. Tables \ref{tab:aut_sum}
 and \ref{tab:dep_sum} contain summary statistics for the data I use in
 estimation.
+
+\textbf{NEED TO UPDATE}
 
 \begin{table}[h!]
     \centering
     \begin{tabular}{|l|l|l|l|l|l|l|}
         \hline
                  & Obs Number & In Field & Citers & Moves & Cits / Pap, avg & Cits / Pap, sd \\ \hline
-        Academicss  & 3876       & 150      & 122    & 679   & 26              & 29             \\ \hline
+        Academicss  & 3861       & 150      & 122    & 679   & 26              & 29             \\ \hline
     \end{tabular}
     \caption{Academic summary statistics}
     \label{tab:aut_sum}
@@ -363,7 +364,7 @@ estimation.
 \section{Reduced Form Evidence}
 \subsection{Peer Learning}
 
-Before describing the structural model, I present some motivating reduced-form evidence.  The unit of obervation in the following analysis is an academic, and we will be interested in how long it takes an academic to cite the Jensen paper conditional on a number of covariates.  The natural setup for this type of problem is survival analysis.  Table \ref{tab:red_form} presents the results of a series of logistic models, reporting odds ratios.  We are most interested in the odds ratios of two regressors: department citers and total exposure.  Department citers is the number of other people in one's department who have cited a paper.  Total exposure is the sum of department citers for each year since an academic has been in the data set.
+Before describing the structural model, I present some motivating reduced-form evidence.  The unit of obervation in the following analysis is an academic, and we will be interested in how long it takes an academic to cite the Jensen paper conditional on a number of covariates.  The natural setup for this type of problem is survival analysis.  Table \ref{tab:red_form} presents the results of a series of models.  When the models are logit, odds ratio are reported.  We are most interested in the odds ratios of two regressors: department citers and total exposure.  Department citers is the number of other people in one's department who have cited a paper.  Total exposure is the sum of department citers for each year since an academic has been in the data set.
 \begin{table}
     \centering
     \begin{tabular}{lccccc} \hline
@@ -411,6 +412,8 @@ Included in the controls are the lifetime citations of the paper, whether the ac
 We see that lagged department citers goes in the correct direction, but is not significant.  Lagged total exposure is also in the right direction and is significant at the 10\% level.  The reported coefficient implies that additional exposure to a colleague who has cited the paper leads to a 4.3\% higher odds ratio of citing in the next period.  When both lagged department citers and lagged total exposure are included in Model (3), we see that department citers is in the wrong direction and still not statistically significant.  I take this as an indication that previous exposure matters as much single period lagged exposure.  That multiple lags matter is perhaps not surprising in light of the time it takes to publish a paper.  Finally, in Model (4) we see that it is really the interaction between lifetime paper citations and lagged total exposure that matters.  That is, those who are interested in the paper are the ones likely to learn about it from colleagues.
 
 Taking these results into consideration, the structural model will use total exposure as the measure of peer influence, and unobservable interest will play a role both in the likelihood that an academic cites the paper, and also in deciding when to move between departments.
+
+Table \X presents results related to the movements of academics.
 
 \section{Model}
 \label{sec:model}
@@ -2142,7 +2145,7 @@ identical.
 
 \bibliographystyle{plainnat.bst}
 
-\bibliography{/home/veryshuai/Documents/research/bib/biglist}
+\bibliography{/home/veryshuai/Documents/bib/biglist}
 
 \
 
