@@ -1,0 +1,710 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.26.3 (20100126.1600)
+%%Title: printing_press
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 1261 504
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 1225 468 boxprim clip newpath
+1 1 set_scale 0 rotate 40 41 translate
+% Mainz \n Gutenberg \n 1452
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+460 416 70.21 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+437 430.4 moveto 46 (Mainz ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+418 412.4 moveto 84 ( Gutenberg ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+439.5 394.4 moveto 41 ( 1452) alignedtext
+grestore
+% Strassberg \n Mentelin \n 1460
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+67 168 67.18 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+27.5 182.4 moveto 79 (Strassberg ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+32 164.4 moveto 70 ( Mentelin ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+46.5 146.4 moveto 41 ( 1460) alignedtext
+grestore
+% Mainz \n Gutenberg \n 1452->Strassberg \n Mentelin \n 1460
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 389.9 413.16 moveto
+281.7 407.15 81.88 388.98 38 336 curveto
+11.14 303.57 23.09 255.29 39.02 218.8 curveto
+stroke
+0 0 0 edgecolor
+newpath 42.38 219.87 moveto
+43.35 209.32 lineto
+36.01 216.95 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 42.38 219.87 moveto
+43.35 209.32 lineto
+36.01 216.95 lineto
+closepath stroke
+grestore
+% Strassberg \n Eggestein \n 1466
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+114 292 67.18 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+74.5 306.4 moveto 79 (Strassberg ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+75.5 288.4 moveto 77 ( Eggestein ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+93.5 270.4 moveto 41 ( 1466) alignedtext
+grestore
+% Mainz \n Gutenberg \n 1452->Strassberg \n Eggestein \n 1466
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 394.11 401.12 moveto
+338.48 387.47 257.36 364.99 190 336 curveto
+183.88 333.37 177.64 330.35 171.5 327.16 curveto
+stroke
+0 0 0 edgecolor
+newpath 173.06 324.03 moveto
+162.59 322.39 lineto
+169.75 330.2 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 173.06 324.03 moveto
+162.59 322.39 lineto
+169.75 330.2 lineto
+closepath stroke
+grestore
+% Mainz \n Schöffer \n 1452
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+257 292 58.19 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+234 306.4 moveto 46 (Mainz ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+223.5 288.4 moveto 67 ( Sch�ffer ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+236.5 270.4 moveto 41 ( 1452) alignedtext
+grestore
+% Mainz \n Gutenberg \n 1452->Mainz \n Schöffer \n 1452
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 407.98 386.2 moveto
+382.49 371.4 351.45 353.07 324 336 curveto
+319.27 333.06 314.39 329.96 309.51 326.83 curveto
+stroke
+0 0 0 edgecolor
+newpath 311.07 323.67 moveto
+300.77 321.19 lineto
+307.27 329.55 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 311.07 323.67 moveto
+300.77 321.19 lineto
+307.27 329.55 lineto
+closepath stroke
+grestore
+% Basel \n Ruppel \n 1466
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+384 292 50.91 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+363 306.4 moveto 42 (Basel ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+356 288.4 moveto 56 ( Ruppel ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+363.5 270.4 moveto 41 ( 1466) alignedtext
+grestore
+% Mainz \n Gutenberg \n 1452->Basel \n Ruppel \n 1466
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 434.69 374.71 moveto
+427.81 363.48 420.3 351.23 413.22 339.68 curveto
+stroke
+0 0 0 edgecolor
+newpath 416.12 337.71 moveto
+407.91 331.01 lineto
+410.15 341.37 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 416.12 337.71 moveto
+407.91 331.01 lineto
+410.15 341.37 lineto
+closepath stroke
+grestore
+% Subiaco/Rome \n Schweinheim \n 1465
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+536 292 82.94 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+485.5 306.4 moveto 101 (Subiaco/Rome ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+485 288.4 moveto 102 ( Schweinheim ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+515.5 270.4 moveto 41 ( 1465) alignedtext
+grestore
+% Mainz \n Gutenberg \n 1452->Subiaco/Rome \n Schweinheim \n 1465
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 485.31 374.71 moveto
+491.58 364.47 498.38 353.38 504.89 342.75 curveto
+stroke
+0 0 0 edgecolor
+newpath 508.04 344.31 moveto
+510.28 333.96 lineto
+502.07 340.65 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 508.04 344.31 moveto
+510.28 333.96 lineto
+502.07 340.65 lineto
+closepath stroke
+grestore
+% Bamberg \n Pfister \n 1457
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+517 168 58.19 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+483.5 182.4 moveto 67 (Bamberg ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+490 164.4 moveto 54 ( Pfister ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+496.5 146.4 moveto 41 ( 1457) alignedtext
+grestore
+% Mainz \n Gutenberg \n 1452->Bamberg \n Pfister \n 1457
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 527.02 402.35 moveto
+563.6 391.12 605.84 371.1 628 336 curveto
+648.88 302.93 645.82 282.81 628 248 curveto
+616.68 225.89 596.09 208.5 575.69 195.65 curveto
+stroke
+0 0 0 edgecolor
+newpath 577.36 192.57 moveto
+566.99 190.43 lineto
+573.76 198.58 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 577.36 192.57 moveto
+566.99 190.43 lineto
+573.76 198.58 lineto
+closepath stroke
+grestore
+% Nuremberg \n Kefer \n 1459
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+744 292 68.8 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+703 306.4 moveto 82 (Nuremberg ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+721.5 288.4 moveto 45 ( Kefer ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+723.5 270.4 moveto 41 ( 1459) alignedtext
+grestore
+% Mainz \n Gutenberg \n 1452->Nuremberg \n Kefer \n 1459
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 520.53 393.88 moveto
+560.81 378.68 614.64 357.44 661 336 curveto
+668.08 332.73 675.41 329.14 682.65 325.48 curveto
+stroke
+0 0 0 edgecolor
+newpath 684.45 328.49 moveto
+691.74 320.8 lineto
+681.25 322.26 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 684.45 328.49 moveto
+691.74 320.8 lineto
+681.25 322.26 lineto
+closepath stroke
+grestore
+% Folignio \n Numeister \n 1470
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+899 292 68.09 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+870 306.4 moveto 58 (Folignio ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+858.5 288.4 moveto 81 ( Numeister ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+878.5 270.4 moveto 41 ( 1470) alignedtext
+grestore
+% Mainz \n Gutenberg \n 1452->Folignio \n Numeister \n 1470
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 528.84 407.1 moveto
+603.02 396.08 723.67 373.95 822 336 curveto
+828.27 333.58 834.65 330.7 840.9 327.6 curveto
+stroke
+0 0 0 edgecolor
+newpath 842.69 330.62 moveto
+849.96 322.91 lineto
+839.47 324.4 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 842.69 330.62 moveto
+849.96 322.91 lineto
+839.47 324.4 lineto
+closepath stroke
+grestore
+% Augsburg \n Zainer \n 1468
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+67 44 60.81 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+32 58.4 moveto 70 (Augsburg ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+39.5 40.4 moveto 55 ( Zainer ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+46.5 22.4 moveto 41 ( 1468) alignedtext
+grestore
+% Strassberg \n Mentelin \n 1460->Augsburg \n Zainer \n 1468
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 67 123.93 moveto
+67 115.72 67 107.04 67 98.56 curveto
+stroke
+0 0 0 edgecolor
+newpath 70.5 98.34 moveto
+67 88.34 lineto
+63.5 98.34 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 70.5 98.34 moveto
+67 88.34 lineto
+63.5 98.34 lineto
+closepath stroke
+grestore
+% Strassberg \n Eggestein \n 1466->Strassberg \n Mentelin \n 1460
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 97.69 248.98 moveto
+94.19 239.75 90.46 229.89 86.84 220.35 curveto
+stroke
+0 0 0 edgecolor
+newpath 90.09 219.06 moveto
+83.28 210.95 lineto
+83.55 221.54 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 90.09 219.06 moveto
+83.28 210.95 lineto
+83.55 221.54 lineto
+closepath stroke
+grestore
+% Cologne \n Zell \n 1466
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+257 168 53.95 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+226.5 182.4 moveto 61 (Cologne ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+239.5 164.4 moveto 35 ( Zell ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+236.5 146.4 moveto 41 ( 1466) alignedtext
+grestore
+% Mainz \n Schöffer \n 1452->Cologne \n Zell \n 1466
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 257 247.93 moveto
+257 239.72 257 231.04 257 222.56 curveto
+stroke
+0 0 0 edgecolor
+newpath 260.5 222.34 moveto
+257 212.34 lineto
+253.5 222.34 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 260.5 222.34 moveto
+257 212.34 lineto
+253.5 222.34 lineto
+closepath stroke
+grestore
+% Mainz \n Schöffer \n 1452->Bamberg \n Pfister \n 1457
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 299.89 262.14 moveto
+307.75 257.15 316.01 252.23 324 248 curveto
+366.26 225.62 416.17 205.08 454.65 190.41 curveto
+stroke
+0 0 0 edgecolor
+newpath 456.06 193.62 moveto
+464.18 186.81 lineto
+453.59 187.07 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 456.06 193.62 moveto
+464.18 186.81 lineto
+453.59 187.07 lineto
+closepath stroke
+grestore
+% Mainz \n ? \n ?
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1035 416 43.84 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1012 430.4 moveto 46 (Mainz ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1026.5 412.4 moveto 17 ( ? ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1028.5 394.4 moveto 13 ( ?) alignedtext
+grestore
+% Venice \n Jensen \n 1468
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1035 292 50.2 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1010 306.4 moveto 50 (Venice ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1007.5 288.4 moveto 55 ( Jensen ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1014.5 270.4 moveto 41 ( 1468) alignedtext
+grestore
+% Mainz \n ? \n ?->Venice \n Jensen \n 1468
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1035 371.93 moveto
+1035 363.72 1035 355.04 1035 346.56 curveto
+stroke
+0 0 0 edgecolor
+newpath 1038.5 346.34 moveto
+1035 336.34 lineto
+1031.5 346.34 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1038.5 346.34 moveto
+1035 336.34 lineto
+1031.5 346.34 lineto
+closepath stroke
+grestore
+% Germany \n ? \n ?
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1157 416 60.1 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1122.5 430.4 moveto 69 (Germany ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1148.5 412.4 moveto 17 ( ? ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1150.5 394.4 moveto 13 ( ?) alignedtext
+grestore
+% Paris \n Gering \n 1470
+gsave
+1 setlinewidth
+0 0 0 nodecolor
+1157 292 50.91 43.84 ellipse_path stroke
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1138 306.4 moveto 38 (Paris ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1129 288.4 moveto 56 ( Gering ) alignedtext
+0 0 0 nodecolor
+14 /Times-Roman set_font
+1136.5 270.4 moveto 41 ( 1470) alignedtext
+grestore
+% Germany \n ? \n ?->Paris \n Gering \n 1470
+gsave
+1 setlinewidth
+0 0 0 edgecolor
+newpath 1157 371.93 moveto
+1157 363.72 1157 355.04 1157 346.56 curveto
+stroke
+0 0 0 edgecolor
+newpath 1160.5 346.34 moveto
+1157 336.34 lineto
+1153.5 346.34 lineto
+closepath fill
+1 setlinewidth
+solid
+0 0 0 edgecolor
+newpath 1160.5 346.34 moveto
+1157 336.34 lineto
+1153.5 346.34 lineto
+closepath stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 1261 504
+end
+restore
+%%EOF
